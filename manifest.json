@@ -1,0 +1,25 @@
+{
+  "name": "sainsburys",
+  "description": "sainsburys",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [ "button.png" ],
+      "matches": [ "<all_urls>" ]
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://*.sainsburys.co.uk/*"
+  ],
+  "icons": {
+    "256": "icon.png"
+  }
+}
